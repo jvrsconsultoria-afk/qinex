@@ -186,7 +186,7 @@ export function LandingPage() {
 
       <section className="section container about-section" id="sobre-usdt" aria-labelledby="about-title">
         <div className="about-visual">
-          <ScrollVideo src="/media/usdt-box-scroll.mp4" poster="/media/usdt-box-poster.webp" width={400} height={574} />
+          <ScrollVideo src="/media/usdt-box-scroll.mp4" poster="/media/usdt-box-poster.webp" width={400} height={574} frames={{ directory: "/media/usdt-box-frames", count: 90, width: 320, height: 458 }} />
         </div>
         <div className="about-copy">
           <SplitText tag="h2" id="about-title" textAlign="left">O dólar digital.<br /><span className="muted">Mais perto de você.</span></SplitText>

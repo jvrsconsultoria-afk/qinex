@@ -37,6 +37,20 @@ html.lenis {
   font-family: inherit;
 }
 
+.scroll-video {
+  position: relative;
+  aspect-ratio: 400 / 574;
+}
+
+.scroll-video-frames {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .scroll-velocity {
   position: relative;
   overflow: hidden;

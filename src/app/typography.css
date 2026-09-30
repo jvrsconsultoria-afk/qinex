@@ -1,9 +1,9 @@
 :root {
-  --brand-text-start: #9ad1e5;
-  --brand-text-cyan: #69bbdb;
-  --brand-text-blue: #7295e0;
-  --brand-text-violet: #9685d6;
-  --brand-text-end: #ba9cdb;
+  --brand-text-start: #91d6eb;
+  --brand-text-cyan: #60c4e5;
+  --brand-text-blue: #6a96ed;
+  --brand-text-violet: #a086e4;
+  --brand-text-end: #c49ae7;
   --brand-text-gradient: linear-gradient(105deg, var(--brand-text-start) 0%, var(--brand-text-cyan) 20%, var(--brand-text-blue) 44%, var(--brand-text-violet) 72%, var(--brand-text-end) 100%);
 }
 

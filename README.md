@@ -34,6 +34,10 @@ O arquivo `vercel.json` compila o projeto Next.js com `pnpm build` e publica a e
 
 Os links de cotação levam ao simulador na própria página. Os atalhos de compra e venda no hero selecionam a operação correspondente. A tela de solicitação, o envio para WhatsApp e a cópia de mensagens foram removidos. A dashboard e o backend serão desenvolvidos separadamente.
 
+A animação do baú acompanha a rolagem nos dois sentidos. Em telas pequenas e dispositivos de toque, usa uma sequência de quadros WebP com cache limitado, evitando depender da reprodução de vídeo pelo navegador. No desktop, mantém o MP4 controlado pelo scroll. A preferência de redução de movimento exibe o pôster estático.
+
+Os 90 quadros já estão em `public/media/usdt-box-frames`. Para regenerá-los a partir do GIF original, execute `python scripts/export-scroll-frames.py` em um ambiente com Pillow. Esse passo não é necessário para executar ou compilar o site.
+
 ## Estrutura
 
 - `src/app/layout.tsx`: idioma, metadados, fonte e tema.
