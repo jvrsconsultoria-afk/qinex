@@ -28,7 +28,7 @@ A configuração `output: "export"` gera o site estático na pasta `out/`, com a
 - Repositório: [jvrsconsultoria-afk/qinex](https://github.com/jvrsconsultoria-afk/qinex).
 - Vercel: projeto `qinexbeta`, equipe `Qnx` (`qnx1`).
 
-O arquivo `vercel.json` define o framework Next.js, o comando de build e a pasta `out` como saída. As credenciais e os arquivos locais da Vercel ficam fora do Git.
+O arquivo `vercel.json` compila o projeto Next.js com `pnpm build` e publica a exportação estática da pasta `out`. As credenciais e os arquivos locais da Vercel ficam fora do Git.
 
 ## Experiência da landing page
 
