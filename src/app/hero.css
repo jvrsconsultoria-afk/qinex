@@ -1,0 +1,76 @@
+.hero-shell {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: #000;
+}
+
+.hero-shell .hero {
+  z-index: 1;
+}
+
+.hero-heading-copy {
+  display: block;
+}
+
+.hero-shell .hero-art::before {
+  content: "";
+  position: absolute;
+  width: min(560px, 92%);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  transform: translateY(24px);
+  background: radial-gradient(ellipse, #000f 26%, #000c 48%, #180a2c55 61%, transparent 75%);
+  filter: blur(24px);
+  pointer-events: none;
+}
+
+.hero-shell .hero-logo {
+  z-index: 1;
+  opacity: .78;
+  mix-blend-mode: normal;
+  filter: brightness(.9) drop-shadow(0 28px 44px #000f) drop-shadow(0 0 36px #49228370);
+  animation-name: hero-logo-appear;
+}
+
+@keyframes hero-logo-appear {
+  from { opacity: 0; }
+  to { opacity: .78; }
+}
+
+.color-bends-container {
+  overflow: hidden;
+}
+
+.hero-color-bends {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: .2;
+  filter: brightness(.75);
+  mask-image: linear-gradient(to bottom, transparent, #000 18%, #000 68%, transparent);
+}
+
+.hero-color-bends canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-color-bends::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #000b, #0003 48%, transparent 80%);
+}
+
+@media (max-width: 760px) {
+  .hero-color-bends {
+    opacity: .17;
+    mask-image: linear-gradient(to bottom, transparent, #000 24%, #000 76%, transparent);
+  }
+
+  .hero-color-bends::after {
+    background: linear-gradient(to bottom, #0007, transparent 60%);
+  }
+}

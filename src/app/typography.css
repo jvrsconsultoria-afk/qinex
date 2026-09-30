@@ -1,0 +1,18 @@
+:root {
+  --brand-text-start: #9ad1e5;
+  --brand-text-cyan: #69bbdb;
+  --brand-text-blue: #7295e0;
+  --brand-text-violet: #9685d6;
+  --brand-text-end: #ba9cdb;
+  --brand-text-gradient: linear-gradient(105deg, var(--brand-text-start) 0%, var(--brand-text-cyan) 20%, var(--brand-text-blue) 44%, var(--brand-text-violet) 72%, var(--brand-text-end) 100%);
+}
+
+.gradient-text,
+.split-text.gradient-text .split-char,
+.split-text .gradient-text .split-char {
+  background-image: var(--brand-text-gradient);
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

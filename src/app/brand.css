@@ -1,0 +1,104 @@
+.brand-image {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.brand-header .brand-name {
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-10px);
+  clip-path: inset(0 100% 0 0);
+  transition: opacity .35s ease, transform .45s cubic-bezier(.22, 1, .36, 1), clip-path .45s cubic-bezier(.22, 1, .36, 1), visibility 0s .45s;
+}
+
+.brand-header.is-scrolled .brand-name {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  clip-path: inset(0);
+  transition-delay: 0s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brand-header .brand-name {
+    transition: none;
+    transform: none;
+  }
+}
+
+.usdt-logo {
+  display: block;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.usdt-logo-small {
+  width: 24px;
+  height: 24px;
+}
+
+.usdt-logo-large {
+  width: 44px;
+  height: 44px;
+}
+
+.hero-logo {
+  width: min(550px, 100%);
+  max-width: 100%;
+}
+
+.about-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 0;
+}
+
+.scroll-video {
+  width: min(400px, 100%);
+  aspect-ratio: 400 / 574;
+  overflow: hidden;
+  background: #000;
+  mask-image: linear-gradient(to bottom, transparent, #000 6%, #000 94%, transparent);
+}
+
+.scroll-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.footer-bottom {
+  border-top: 0;
+}
+
+@media (min-width: 1440px) {
+  .hero-logo {
+    width: min(590px, 100%);
+  }
+}
+
+@media (max-width: 760px) {
+  .about-visual {
+    max-width: 460px;
+  }
+
+  .brand-image {
+    width: 37px;
+    height: 37px;
+  }
+
+  .hero-logo {
+    width: min(420px, 88%);
+  }
+
+  .brand-footer .brand-image {
+    width: 40px;
+    height: 40px;
+  }
+}

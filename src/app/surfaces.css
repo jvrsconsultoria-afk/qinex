@@ -1,0 +1,52 @@
+:root {
+  --background: #000;
+  --surface: #050407;
+  --surface-raised: #08060b;
+  --border: #211d27;
+}
+
+.quote-card {
+  background: linear-gradient(145deg, #08060d, #030204 72%);
+  border-color: #27212e;
+  box-shadow: 0 20px 80px #48309004;
+}
+
+.final-cta {
+  background: radial-gradient(ellipse at 50% 120%, #1c10241a, transparent 62%), #030204;
+  border-color: #251e2b;
+}
+
+.currency-box,
+.quote-amount-field,
+.quote-receive-field,
+.operation-tabs {
+  background: #040305;
+  border-color: #25202c;
+}
+
+.quote-currency,
+.quote-fees,
+.quote-rate-error button,
+.detail-icon,
+.swap-button {
+  background: #08060b;
+  border-color: #2b2333;
+  box-shadow: none;
+}
+
+.operation-tabs button.active {
+  background: #110d17;
+  border-color: #342b40;
+}
+
+.hero-glow {
+  opacity: .35;
+}
+
+.cta-glow {
+  opacity: .07;
+}
+
+.quote-card::before {
+  opacity: .3;
+}

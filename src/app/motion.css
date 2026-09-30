@@ -1,0 +1,74 @@
+html.lenis {
+  scroll-behavior: auto !important;
+}
+
+.split-text .split-line {
+  display: block;
+}
+
+.split-text .split-word {
+  white-space: nowrap;
+}
+
+.disclosure-content {
+  display: flow-root;
+  overflow: hidden;
+}
+
+.smooth-disclosure summary {
+  transition: color .2s ease;
+}
+
+.smooth-disclosure[data-expanded="false"] .faq-plus {
+  transform: rotate(0);
+}
+
+.stroke-text {
+  display: block;
+  max-width: 100%;
+  line-height: 0;
+}
+
+.stroke-text-svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  font-family: inherit;
+}
+
+.scroll-velocity {
+  position: relative;
+  overflow: hidden;
+  padding-block: 28px;
+  margin-bottom: 64px;
+  border-bottom: 1px solid #ffffff08;
+  background: #000;
+  user-select: none;
+  pointer-events: none;
+}
+
+.velocity-scroller {
+  display: flex;
+  width: max-content;
+  white-space: nowrap;
+}
+
+.velocity-copy {
+  flex-shrink: 0;
+  font-size: clamp(36px, 5.5vw, 80px);
+  font-weight: 550;
+  letter-spacing: -.055em;
+  line-height: 1.2;
+  color: #a7a0bd42;
+}
+
+.velocity-separator {
+  padding-inline: 30px;
+  color: #9774ff59;
+}
+
+@media (max-width: 760px) {
+  .scroll-velocity { padding-block: 20px; margin-bottom: 40px; }
+  .velocity-separator { padding-inline: 20px; }
+}
