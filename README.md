@@ -4,7 +4,7 @@ Landing page em **Next.js (App Router), React e TypeScript**, com fundo preto, r
 
 ## Executar
 
-Requer Node.js 20.9 ou superior e pnpm.
+Use Node.js 24 e pnpm 11.25.0, como no ambiente de produção.
 
 ```sh
 pnpm install
@@ -22,6 +22,14 @@ pnpm build
 
 A configuração `output: "export"` gera o site estático na pasta `out/`, com a estrutura fonte preservada em Next.js. A saída pode ser publicada em um servidor de arquivos estáticos. `next start` não é usado para servir uma exportação estática.
 
+## Publicação
+
+- Site: [qinexbeta.vercel.app](https://qinexbeta.vercel.app).
+- Repositório: [jvrsconsultoria-afk/qinex](https://github.com/jvrsconsultoria-afk/qinex).
+- Vercel: projeto `qinexbeta`, equipe `Qnx` (`qnx1`).
+
+O arquivo `vercel.json` define o framework Next.js, o comando de build e a pasta `out` como saída. As credenciais e os arquivos locais da Vercel ficam fora do Git.
+
 ## Experiência da landing page
 
 Os links de cotação levam ao simulador na própria página. Os atalhos de compra e venda no hero selecionam a operação correspondente. A tela de solicitação, o envio para WhatsApp e a cópia de mensagens foram removidos. A dashboard e o backend serão desenvolvidos separadamente.
@@ -37,7 +45,7 @@ Os links de cotação levam ao simulador na própria página. Os atalhos de comp
 
 ## Conteúdo
 
-Inclui apresentação, três etapas, compra e venda, diferenciais, explicação do USDT, perguntas frequentes e chamada para atendimento. Não foram inventados números de contato, taxas, preços de mercado, prazos, depoimentos, certificações ou garantias.
+Inclui apresentação, simulador de compra e venda, três etapas, explicação do USDT, perguntas frequentes e chamada para simular uma cotação. A página não envia solicitações de operação.
 
 O contato comercial, as condições operacionais, as redes atendidas e os dados cadastrais da empresa devem ser preenchidos/validados pelo proprietário antes de divulgação pública.
 
